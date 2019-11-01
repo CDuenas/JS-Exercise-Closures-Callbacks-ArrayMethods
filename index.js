@@ -208,9 +208,11 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
 function firstNamesAllCaps(runners) {
-}
-
-
+  const firstNames = runners.map(function(upperName){
+    return upperName.first_name.toUpperCase()
+  });
+  return firstNames;
+};
 
 /**
  * ### Challenge `getRunnersByTShirtSize`
